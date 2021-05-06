@@ -1,0 +1,337 @@
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 16px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	height: 100vh;
+	background-color: var(--lightGrayishBlue);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+:root{
+	--moderateViolet: hsl(263, 55%, 52%);
+	--veryDarkGrayishBlue: hsl(217, 19%, 35%);
+	--veryDarkBlackishBlue: hsl(219, 29%, 14%);
+
+	--lightGray: hsl(0, 0%, 81%);
+	--lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+.card{
+	height: 94vh;
+	width: 90vw;
+	max-width: 33.75rem;
+
+	border-radius: 0.5rem;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	/*
+	grid-template-rows: 2fr 1fr 1fr 1.71fr 2fr;
+	*/
+
+	grid-template-rows: auto auto auto auto auto;
+
+	grid-template-areas: "dan"
+						 "jon"
+						 "jea"
+						 "pat"
+						 "kir";
+
+	grid-gap: 1.875rem;
+
+
+}
+
+.people{
+	display: flex;
+	flex-direction: row;
+}
+
+.name{
+	font-size:0.8125em;
+	line-height:1;
+}
+
+.daniel
+{
+	background-color: var(--moderateViolet);
+	background-image: url(./images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-size: 10.5rem 10.5rem;
+	background-position: 20rem 0;
+	grid-area: "dan";
+
+	padding-left:3.6rem;
+	padding-right:4.3rem;
+	padding-top: 3rem;
+	padding-bottom:3rem;
+
+	border-radius: 0.5rem;
+}
+
+.daniel .picture
+{
+	background-image: url(./images/image-daniel.jpg);
+	background-size: 2.625rem 2.625rem;
+}
+
+.daniel .name p:nth-child(1)
+{
+	color: white;
+}
+
+.daniel .name p:nth-child(2)
+{
+	color:white;
+	opacity: 50%;
+}
+
+.daniel > p:nth-child(2)
+{
+	color:white;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+
+.daniel > p:nth-child(3)
+{
+	color: white;
+	opacity: 70%;
+	font-size:0.8125em;
+	line-height: 1.5;
+}
+
+
+
+.jonathan
+{
+	background-color: var(--veryDarkGrayishBlue);
+	grid-area: "jon";
+
+	padding-left:3.6rem;
+	padding-right:4.3rem;
+	padding-top: 3rem;
+	padding-bottom:3rem;
+
+	border-radius: 0.5rem;
+}
+
+.jonathan .picture
+{
+	background-image: url(./images/image-jonathan.jpg);
+	background-size: 2.625rem 2.625rem;
+}
+
+
+.jonathan .name p:nth-child(1)
+{
+	color: white;
+}
+
+.jonathan .name p:nth-child(2)
+{
+	color:white;
+	opacity: 50%;
+}
+
+.jonathan > p:nth-child(2)
+{
+	color:white;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+
+.jonathan > p:nth-child(3)
+{
+	color: white;
+	opacity: 70%;
+	font-size:0.8125em;
+	line-height: 1.5;
+}
+
+
+ 
+.jeanette
+{
+	background-color: white;
+	grid-area: "jea";
+
+
+	padding-left:3.6rem;
+	padding-right:4.3rem;
+	padding-top: 3rem;
+	padding-bottom:3rem;
+
+	border-radius: 0.5rem;
+}
+
+.jeanette .picture
+{
+	background-image: url(./images/image-jeanette.jpg);
+	background-size: 2.625rem 2.625rem;
+}
+
+
+.jeanette .name p:nth-child(1)
+{
+	color: var(--veryDarkGrayishBlue);
+
+}
+
+.jeanette .name p:nth-child(2)
+{
+	color: var(--veryDarkGrayishBlue);
+	opacity: 50%;
+}
+
+.jeanette > p:nth-child(2)
+{
+	color: var(--veryDarkGrayishBlue);
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+
+.jeanette > p:nth-child(3)
+{
+	color: var(--veryDarkGrayishBlue);
+	opacity: 70%;
+	font-size:0.8125em;
+	line-height: 1.5;
+}
+
+
+.patrick
+{
+	background-color:var(--veryDarkBlackishBlue);
+	grid-area: "pat";
+
+	padding-left:3.6rem;
+	padding-right:4.3rem;
+	padding-top: 3rem;
+	padding-bottom:3rem;
+
+	border-radius: 0.5rem;
+}
+
+.patrick .picture
+{
+	background-image: url(./images/image-patrick.jpg);
+	background-size: 2.625rem 2.625rem;
+}
+
+
+.patrick .name p:nth-child(1)
+{
+	color: white;
+}
+
+.patrick .name p:nth-child(2)
+{
+	color:white;
+	opacity: 50%;
+}
+
+.patrick > p:nth-child(2)
+{
+	color:white;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+
+.patrick > p:nth-child(3)
+{
+	color: white;
+	opacity: 70%;
+	font-size:0.8125em;
+	line-height: 1.5;
+}
+
+
+
+
+
+.kira
+{
+	background-color: white;
+	grid-area: "kir";
+
+	padding-left:3.6rem;
+	padding-right:4.3rem;
+	padding-top: 3rem;
+	padding-bottom:3rem;
+
+	border-radius: 0.5rem;
+}
+
+.kira .picture
+{
+	background-image: url(./images/image-kira.jpg);
+	background-size: 2.625rem 2.625rem;
+}
+
+
+.kira .name p:nth-child(1)
+{
+	color: var(--veryDarkBlackishBlue);
+}
+
+.kira .name p:nth-child(2)
+{
+	color: var(--veryDarkBlackishBlue);
+	opacity: 50%;
+}
+
+.kira > p:nth-child(2)
+{
+	color: var(--veryDarkBlackishBlue);
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+
+.kira > p:nth-child(3)
+{
+	color: var(--veryDarkBlackishBlue);
+	opacity: 70%;
+	font-size:0.8125em;
+	line-height: 1.5;
+}
+
+
+
+.picture
+{
+	/* 7% of vw*/
+	width: 2.625rem;
+	height: 2.625rem;
+
+	border-radius: 50%;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+   
